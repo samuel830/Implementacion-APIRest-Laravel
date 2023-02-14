@@ -18,4 +18,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('/player/', 'App\Http\Controllers\PlayerController@index');
+Route::get('/post/', 'App\Http\Controllers\PostController@index');
+Route::get('/post/{id}', 'App\Http\Controllers\PostController@getBlog');
