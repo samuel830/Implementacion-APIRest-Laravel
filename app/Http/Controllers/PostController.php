@@ -8,7 +8,7 @@ use Illuminate\Http\JsonResponse;
 
 class PostController extends Controller
 {
-    public function index()
+    public function getBlogs()
     {
         try {
             $posts = Post::all();
